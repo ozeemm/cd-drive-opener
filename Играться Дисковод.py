@@ -5,19 +5,19 @@ def opencd():
 def closecd():
     ctypes.windll.WINMM.mciSendStringW(u"set cdaudio door closed", None, 0, None)
 
-print('Что делать?')
-print('0. Закрыть и заниматься английским')
-print('1. Открыть дисковод')
-print('2. Закрыть дисковод')
+print('Р§С‚Рѕ РґРµР»Р°С‚СЊ?')
+print('0. Р—Р°РєСЂС‹С‚СЊ Рё Р·Р°РЅРёРјР°С‚СЊСЃСЏ Р°РЅРіР»РёР№СЃРєРёРј')
+print('1. РћС‚РєСЂС‹С‚СЊ РґРёСЃРєРѕРІРѕРґ')
+print('2. Р—Р°РєСЂС‹С‚СЊ РґРёСЃРєРѕРІРѕРґ')
 
 while True:
-    todo = int(input('Делайте выбор: '))
+    todo = int(input('Р”РµР»Р°Р№С‚Рµ РІС‹Р±РѕСЂ: '))
     if(todo == 1):
         opencd()
     elif(todo == 2):
         closecd()
     else:
-        print('Ой, ну и не надо')
+        print('РћР№, РЅСѓ Рё РЅРµ РЅР°РґРѕ')
         exit()
     
     
